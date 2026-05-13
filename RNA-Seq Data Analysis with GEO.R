@@ -7,7 +7,7 @@
 if (!require("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 
-BiocManager::install("org.Sc.sgd.db")
+BiocManager::install("org.Hs.eg.db")
 
 #  org.Sc.sgd.db is installed from Bioconductor because it is not available on CRAN.
 
@@ -45,7 +45,7 @@ install.packages("pheatmap")
 # Load required libraries.
 
 library(DESeq2)
-library(org.Sc.sgd.db)
+library(org.Hs.eg.db)
 library(pheatmap)
 library(tidyverse)
 library(clusterProfiler)
@@ -53,7 +53,7 @@ library(pathview)
 library(EnhancedVolcano)
 
 # DESeq2 is used for differential expression analysis.
-# org.Sc.sgd.db provides Saccharomyces cerevisiae gene annotations.
+# org.Hs.eg.db provides Homo sapiens gene annotations.
 # pheatmap is used for heatmap visualization.
 # tidyverse is used for data manipulation.
 # clusterProfiler and pathview are used for enrichment analysis.
